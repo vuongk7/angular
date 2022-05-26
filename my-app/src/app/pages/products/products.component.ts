@@ -1,30 +1,31 @@
 import { Component, OnInit } from '@angular/core';
 import { Iproducts } from 'src/app/models/product';
+import { ServiceService } from 'src/app/service/service.service';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-  productsDetail! : Iproducts
-  nameInput: String ="";
-  isStatus: boolean = false;
-  productList:Iproducts[]=[
-    {id:1, name:"product 1", price:200, status:true},
-    {id:2, name:"product 2", price:300, status: false}
-  ]
-  constructor() { }
+  products:any;
+  constructor(private productService: ServiceService) { }
 
   ngOnInit(): void {
+    // chạy
+    this.getProductList();
   }
-  onHandleClick(){
-    this.isStatus= ! this.isStatus
+
+  // khai báo
+  getProductList() {
+    this.productService.getProductList().subscribe(data => {
+      this.products = data;
+    })
   }
-  onHandleDelete(id: number){
-    this.productList = this.productList.filter(product =>product.id !==id)
-  }
-  onHandleGetInfo(products: Iproducts) {
-    console.log(1);
-    this.productsDetail = products;
+  onDelete(id: number|string) {
+    if (id) {
+      this.productService.deleteProduct(id).subscribe(data => {
+        this.getProductList();
+      });
+    }
   }
 }

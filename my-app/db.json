@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "json-server",
+      "price": "typicode",
+      "status": 1
+    },
+    {
+      "id": 3,
+      "name": "json-server",
+      "price": "typicode",
+      "status": 1
+    },
+    {
+      "id": 4,
+      "name": "json-server",
+      "price": "typicode",
+      "status": 1
+    }
+  ]
+}

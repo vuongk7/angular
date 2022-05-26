@@ -8,6 +8,8 @@ import { ProductsComponent } from './pages/products/products.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { ProductsDetailComponent } from './pages/products-detail/products-detail.component';
 import { ManagerProductComponent } from './pages/manager-product/manager-product.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ServiceService } from './service/service.service';
 
 @NgModule({
   declarations: [
@@ -20,9 +22,10 @@ import { ManagerProductComponent } from './pages/manager-product/manager-product
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
