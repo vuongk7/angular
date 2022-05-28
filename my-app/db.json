@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "sua",
-      "price": 5,
+      "price": 55,
       "status": 1
     },
     {
@@ -28,12 +28,6 @@
       "id": 7,
       "name": "Jodan lạ",
       "price": 2,
-      "status": true
-    },
-    {
-      "id": 8,
-      "name": "lequivuong",
-      "price": 1,
       "status": true
     }
   ]

@@ -1,17 +1,10 @@
-{{ product | json }}
 
 <form (ngSubmit)="onSubmit()" #formAdd="ngForm">
-  <input
-    type="text"
-    placeholder="Name"
-    [(ngModel)]="product.name"
-    name="name"
-  />
-  <input
-    type="number"
-    placeholder="Price"
-    [(ngModel)]="product.price"
-    name="price"
-  />
-  <button>Add</button>
+  <div class="mb-3">
+    <input type="text" class="form-control" id="exampleInputEmail1"  [(ngModel)]="product.name" name="name">
+  </div>
+  <div class="mb-3">
+    <input type="number" class="form-control" id="exampleInputPassword1" [(ngModel)]="product.price" name="price">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
