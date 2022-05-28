@@ -2,6 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Iproducts } from 'src/app/models/product';
 import { ServiceService } from 'src/app/service/service.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import data from 'src/app/data';
 @Component({
   selector: 'app-products-add',
   templateUrl: './products-add.component.html',
@@ -31,6 +32,7 @@ export class ProductsAddComponent implements OnInit {
       // chuyển hướng router
       this.router.navigateByUrl('/product');
     })
-    // this.createProduct.emit(this.product);
+  
   }
+  
 }

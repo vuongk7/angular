@@ -4,13 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductsComponent } from './pages/products/products.component';
+import { ProductsComponent } from './components/products/products.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
-import { ProductsDetailComponent } from './pages/products-detail/products-detail.component';
-import { ManagerProductComponent } from './pages/manager-product/manager-product.component';
+import { ProductsDetailComponent } from './components/products-detail/products-detail.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceService } from './service/service.service';
-import { ProductsAddComponent } from './pages/products-add/products-add.component';
+import { ProductsAddComponent } from './components/products-add/products-add.component';
+import { ProductEditComponent } from './components/product-edit/product-edit.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +18,8 @@ import { ProductsAddComponent } from './pages/products-add/products-add.componen
     ProductsComponent,
     HomepageComponent,
     ProductsDetailComponent,
-    ManagerProductComponent,
-    ProductsAddComponent
+    ProductsAddComponent,
+    ProductEditComponent,
   ],
   imports: [
     BrowserModule,

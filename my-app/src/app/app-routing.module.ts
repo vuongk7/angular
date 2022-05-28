@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
 import { HomepageComponent } from './pages/homepage/homepage.component';
-import { ManagerProductComponent } from './pages/manager-product/manager-product.component';
-import { ProductsAddComponent } from './pages/products-add/products-add.component';
-import { ProductsDetailComponent } from './pages/products-detail/products-detail.component';
-import { ProductsComponent } from './pages/products/products.component';
+import { ProductsAddComponent } from './components/products-add/products-add.component';
+import { ProductsDetailComponent } from './components/products-detail/products-detail.component';
+import { ProductsComponent } from './components/products/products.component';
+import { ProductEditComponent } from './components/product-edit/product-edit.component';
 
 const routes: Routes = [
   {
@@ -17,17 +16,18 @@ const routes: Routes = [
     component: ProductsComponent
   },
   {
-    path:'manager',
-    component: ManagerProductComponent
-  },
-  {
     path: 'detail',
     component: ProductsDetailComponent
   },
   {
-    path: 'product-add',
+    path: 'product/add',
     component: ProductsAddComponent
-  }
+  },
+ {
+  path: 'product/edit/:id',
+  component: ProductEditComponent
+ }
+
 ];
 
 @NgModule({
