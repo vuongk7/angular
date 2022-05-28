@@ -1,34 +1,16 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "sua",
-      "price": 55,
-      "status": 1
-    },
-    {
-      "id": 4,
-      "name": "json-server",
-      "price": "typicode",
-      "status": 1
-    },
-    {
-      "id": 5,
-      "name": "lequivuong",
-      "price": 3,
-      "status": true
-    },
-    {
-      "id": 6,
       "name": "Giày Đá Bóng X19.1 TF",
-      "price": 2,
-      "status": true
+      "price": 10000,
+      "status": true,
+      "id": 2
     },
     {
-      "id": 7,
       "name": "Jodan lạ",
-      "price": 2,
-      "status": true
+      "price": 110,
+      "status": true,
+      "id": 3
     }
   ]
 }

@@ -11,7 +11,6 @@ import data from 'src/app/data';
 export class ProductsAddComponent implements OnInit {
   // @Output() createProduct = new EventEmitter<{ name: string, price: number }>();
   product: Iproducts ={
-    id: 0,
     name: "",
     price: 0,
     status: true
