@@ -7,16 +7,16 @@
       "status": 1
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "json-server",
       "price": "typicode",
       "status": 1
     },
     {
-      "id": 4,
-      "name": "json-server",
-      "price": "typicode",
-      "status": 1
+      "id": 5,
+      "name": "lequivuong",
+      "price": 3,
+      "status": true
     }
   ]
 }

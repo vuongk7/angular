@@ -19,4 +19,7 @@ export class ServiceService {
   deleteProduct(id: number|string) {
     return this.http.delete(`http://localhost:3000/products/${id}`);
   }
+  addProduct(product:Iproducts) {
+    return this.http.post<Iproducts>(`http://localhost:3000/products`,product);
+  }
 }

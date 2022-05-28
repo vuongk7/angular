@@ -10,6 +10,7 @@ import { ProductsDetailComponent } from './pages/products-detail/products-detail
 import { ManagerProductComponent } from './pages/manager-product/manager-product.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceService } from './service/service.service';
+import { ProductsAddComponent } from './pages/products-add/products-add.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ServiceService } from './service/service.service';
     ProductsComponent,
     HomepageComponent,
     ProductsDetailComponent,
-    ManagerProductComponent
+    ManagerProductComponent,
+    ProductsAddComponent
   ],
   imports: [
     BrowserModule,
