@@ -18,6 +18,8 @@
       <td>
         <button (click)="onDelete(product.id)" class="btn btn-danger">delete</button>
         <a href="/product/add"><button class="btn btn-info ms-1">add</button></a>
+        <a   [routerLink]="['/product/edit',product.id]" ><button class="btn btn-info ms-1">edit</button></a>
+        <!-- <button (click)="onEdit(product.id)" class="btn btn-info ms-1">edit</button> -->
       </td>
     </tr>
   </tbody>

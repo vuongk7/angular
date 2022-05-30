@@ -8,9 +8,15 @@
     },
     {
       "name": "Jodan lạ",
-      "price": 110,
+      "price": 1102,
       "status": true,
       "id": 3
+    },
+    {
+      "name": "lequivuong",
+      "price": 2222,
+      "status": true,
+      "id": 4
     }
   ]
 }
