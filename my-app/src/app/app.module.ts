@@ -11,6 +11,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ServiceService } from './service/service.service';
 import { ProductsAddComponent } from './components/products-add/products-add.component';
 import { ProductEditComponent } from './components/product-edit/product-edit.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { SigninComponent } from './components/signin/signin.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +24,10 @@ import { ProductEditComponent } from './components/product-edit/product-edit.com
     ProductsDetailComponent,
     ProductsAddComponent,
     ProductEditComponent,
+    HeaderComponent,
+    FooterComponent,
+    SignupComponent,
+    SigninComponent,
   ],
   imports: [
     BrowserModule,

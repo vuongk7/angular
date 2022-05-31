@@ -18,5 +18,18 @@
       "status": true,
       "id": 4
     }
+  ],
+  "users": [
+    {
+      "name": "",
+      "password": "123456",
+      "email": "vuong0712002@gmail.com",
+      "id": 1
+    },
+    {
+      "password": "sdsd",
+      "email": "0949285325",
+      "id": 2
+    }
   ]
 }

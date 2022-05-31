@@ -5,6 +5,9 @@ import { ProductsAddComponent } from './components/products-add/products-add.com
 import { ProductsDetailComponent } from './components/products-detail/products-detail.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ProductEditComponent } from './components/product-edit/product-edit.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { SigninComponent } from './components/signin/signin.component';
 
 const routes: Routes = [
   {
@@ -26,7 +29,19 @@ const routes: Routes = [
  {
   path: 'product/edit/:id',
   component: ProductEditComponent
- }
+ },
+ {
+  path : '',
+  component: HeaderComponent
+},
+{
+  path : 'signup',
+  component: SignupComponent
+},
+{
+  path : 'signin',
+  component: SigninComponent
+}
 
 ];
 

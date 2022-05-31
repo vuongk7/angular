@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Iproducts } from '../models/product';
+import { IUser } from '../models/User';
 
 @Injectable({
   providedIn: 'root'
@@ -25,4 +26,5 @@ export class ServiceService {
   updateProduct(product: Iproducts): Observable<Iproducts> {
     return this.http.put<Iproducts>(`http://localhost:3000/products/${product.id}`, product);
   }
+ 
 }
